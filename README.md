@@ -20,3 +20,5 @@
 3. 2 hoch 9 = 512 Kombinationen
 4. 2 hoch 20 = 1048576 Kombinationen
 5. 2 hoch 8 = 265  2 hoch 9 = 512 also 2 hcoh 9
+6. 2 hoch 11 = 2048
+7. WORD: +32’767 → −32’768   DWORD: +2’147’483’647 → −2’147’483’648
