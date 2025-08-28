@@ -5,35 +5,59 @@
 ### Digitale Daten
 
 Bit (b): Kleinste Informationseinheit, nur 0 oder 1.
+
 Byte (B): 1 Byte = 8 Bit, Wertebereich 0–255.
+
 Datenraten: Immer in Bit pro Sekunde (z. B. 100 Mb/s).
+
 Speichergrößen: Immer in Byte (z. B. 256 GB SSD).
 
 **SI-Präfixe (Zehner-System)**
+
 1024 → [Y] → Yotta → 1024 → 1'000'000'000'000'000'000'000'000 → Quadrillion
+
 1021 → [Z] → Zetta → 1021 → 1'000'000'000'000'000'000'000 → Trilliarde
+
 1018 → [E] → Exa  → 1'000'000'000'000'000'000 → Trillion
+
 1015 → [P] → Peta  → 1'000'000'000'000'000 → Billiarde
-1012 → [T] → Tera  → 1'000'000'000'000 → Billion
-109 → [G] → Giga  → 1'000'000'000 → Milliarde
+
+sqdd9sd109 → [G] → Giga  → 1'000'000'000 → Milliarde
+
 106 → [M] → Mega  → 1'000'000 → Million
+
 103 → [k] → kilo → 1'000 → Tausend
+
 100 → [-]  → 1 → Eins
+
 10-3 → [m] → milli  → 0.001 → Tausendstel
+
 10-6 → [µ] → mikro  → 0.000'001 → Millionstel
+
 10-9 → [n] → nano  → 0.000'000'001 → Milliardstel
+
 10-12 → [p] → piko  → 0.000'000'000'001 → Billionstel
+
 10-15 → [f] → femto  → 0.000'000'000'000'001 → Billiardstel
+
 10-18 → [a] → atto  → 0.000'000'000'000'000'001 → Trillionstel
 
 **IEC-Präfixe (Zweier-System)**
+
 280 → [Yi] → Yobi → 1'208'925'819'614'629'174'706'176
+
 270 → [Zi] → Zebi → 1'180'591'620'717'411'303'424
+
 260 → [Ei] → Exbi → 1'152'921'504'606'846'976
+
 250 → [Pi] → Pebi → 1'125'899'906'842'624
+
 240 → [Ti] → Tebi → 1'099'511'627'776
+
 230 → [Gi] → Gibi → 1'073'741'824
+
 220 → [Mi] → Mebi → 1'048'576
+
 210 → [Ki] → Kibi → 1'024
 
 ### Aufgabe 1
