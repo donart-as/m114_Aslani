@@ -2,7 +2,7 @@
 
 ## Tag 1 22.08.2025
 
-### Digitale Daten
+## Digitale Daten
 
 Bit (b): Kleinste Informationseinheit, nur 0 oder 1.
 
@@ -10,55 +10,55 @@ Byte (B): 1 Byte = 8 Bit, Wertebereich 0–255.
 
 Datenraten: Immer in Bit pro Sekunde (z. B. 100 Mb/s).
 
-Speichergrößen: Immer in Byte (z. B. 256 GB SSD).
+Speichergrössen: Immer in Byte (z. B. 256 GB SSD).
 
 **SI-Präfixe (Zehner-System)**
 
-1024 → [Y] → Yotta → 1024 → 1'000'000'000'000'000'000'000'000 → Quadrillion
+10 Hoch 24 → [Y] → Yotta → 1024 → 1'000'000'000'000'000'000'000'000 → Quadrillion
 
-1021 → [Z] → Zetta → 1021 → 1'000'000'000'000'000'000'000 → Trilliarde
+10 Hoch 21 → [Z] → Zetta → 1021 → 1'000'000'000'000'000'000'000 → Trilliarde
 
-1018 → [E] → Exa  → 1'000'000'000'000'000'000 → Trillion
+10 Hoch 18 → [E] → Exa  → 1'000'000'000'000'000'000 → Trillion
 
-1015 → [P] → Peta  → 1'000'000'000'000'000 → Billiarde
+10 Hoch 15 → [P] → Peta  → 1'000'000'000'000'000 → Billiarde
 
-sqdd9sd109 → [G] → Giga  → 1'000'000'000 → Milliarde
+10 Hoch 9 → [G] → Giga  → 1'000'000'000 → Milliarde
 
-106 → [M] → Mega  → 1'000'000 → Million
+10 Hoch 6 → [M] → Mega  → 1'000'000 → Million
 
-103 → [k] → kilo → 1'000 → Tausend
+10 Hoch 3 → [k] → kilo → 1'000 → Tausend
 
-100 → [-]  → 1 → Eins
+10 Hoch 0 → [-]  → 1 → Eins
 
-10-3 → [m] → milli  → 0.001 → Tausendstel
+10 Hoch -3 → [m] → milli  → 0.001 → Tausendstel
 
-10-6 → [µ] → mikro  → 0.000'001 → Millionstel
+10 Hoch -6 → [µ] → mikro  → 0.000'001 → Millionstel
 
-10-9 → [n] → nano  → 0.000'000'001 → Milliardstel
+10 Hoch -9 → [n] → nano  → 0.000'000'001 → Milliardstel
 
-10-12 → [p] → piko  → 0.000'000'000'001 → Billionstel
+10 Hoch -12 → [p] → piko  → 0.000'000'000'001 → Billionstel
 
-10-15 → [f] → femto  → 0.000'000'000'000'001 → Billiardstel
+10 Hoch -15 → [f] → femto  → 0.000'000'000'000'001 → Billiardstel
 
-10-18 → [a] → atto  → 0.000'000'000'000'000'001 → Trillionstel
+10 Hoch -18 → [a] → atto  → 0.000'000'000'000'000'001 → Trillionstel
 
 **IEC-Präfixe (Zweier-System)**
 
-280 → [Yi] → Yobi → 1'208'925'819'614'629'174'706'176
+2 Hoch 80 → [Yi] → Yobi → 1'208'925'819'614'629'174'706'176
 
-270 → [Zi] → Zebi → 1'180'591'620'717'411'303'424
+2 Hoch 70 → [Zi] → Zebi → 1'180'591'620'717'411'303'424
 
-260 → [Ei] → Exbi → 1'152'921'504'606'846'976
+2 Hoch 60 → [Ei] → Exbi → 1'152'921'504'606'846'976
 
-250 → [Pi] → Pebi → 1'125'899'906'842'624
+2 Hoch 50 → [Pi] → Pebi → 1'125'899'906'842'624
 
-240 → [Ti] → Tebi → 1'099'511'627'776
+2 Hoch 40 → [Ti] → Tebi → 1'099'511'627'776
 
-230 → [Gi] → Gibi → 1'073'741'824
+2 Hoch 30 → [Gi] → Gibi → 1'073'741'824
 
-220 → [Mi] → Mebi → 1'048'576
+2 Hoch 20 → [Mi] → Mebi → 1'048'576
 
-210 → [Ki] → Kibi → 1'024
+2 Hoch 10 → [Ki] → Kibi → 1'024
 
 ### Aufgabe 1
 
@@ -69,6 +69,25 @@ sqdd9sd109 → [G] → Giga  → 1'000'000'000 → Milliarde
    Dateigrösser: 220 KB (225’776 Bytes)
    Grösse auf Datenträger: 224 KB (229’376 Bytes)
    
+
+
+## Binäre Datenspeicher & Grenzen
+
+**Kombinationen:** Formel = 2^n (n = Anzahl Bits).
+
+z. B. 8 Bit → 256 Kombinationen.
+
+**Speichergrössen:**
+
+BYTE = 8 Bit, WORD = 16 Bit, DWORD = 32 Bit, QWORD = 64 Bit.
+
+**Signed vs. Unsigned:**
+
+**Unsigned** = nur positive Werte.
+
+**Signed** = negatives Vorzeichen durch MSB.
+
+**Overflow:** Bei vollem Speicher springt der Wert zurück (z. B. BYTE: 255+1=0).
 
 ### Aufgabe 2
 
@@ -82,6 +101,23 @@ sqdd9sd109 → [G] → Giga  → 1'000'000'000 → Milliarde
 5. 2 hoch 8 = 265  2 hoch 9 = 512 also 2 hcoh 9
 6. 2 hoch 11 = 2048
 7. WORD: +32’767 → −32’768   DWORD: +2’147’483’647 → −2’147’483’648
+
+
+## Zahlensysteme
+
+**Binärsystem (2):** Basis 2, nur 0 und 1.
+
+**Dezimalsystem (10):** Unser normales System.
+
+**Hexadezimal (16):** 0–9 und A–F, praktisch für Adressen.
+
+**Umwandlungen:**
+
+Dez → Binär: durch 2 teilen, Reste lesen.
+
+Dez → Hex: durch 16 teilen.
+
+Hex ↔ Binär: jede Hex-Ziffer = 4 Bit.
 
 ### Aufgabe 3
 
@@ -101,3 +137,6 @@ sqdd9sd109 → [G] → Giga  → 1'000'000'000 → Milliarde
 14. 1011 1110 1001 0000 1011 1101
 15. E0A7
 16. A0F50257
+
+
+## Binäres Rechnen & Überlauf
