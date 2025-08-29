@@ -200,3 +200,15 @@ Double → 64 Bit, ~15 Dezimalstellen
 - Kann die dez. Zahl 0.1 genau gespeichert werden? (Bei "Decimal Representation" 0.1 eingeben) = Nein es geht nicht = 0.100000001490116119384765625
 - max. darstellbare Zahl≈3,4028235×10 hoch 38​
 - Und die kleinste pos. Zahl? (knapp ≠ 0) =  2.350989e-38
+
+### Aufgabe 3
+
+1. Was stellen Sie fest bezüglich der Länge und Codierung der UTF-8 Zeichen gegenüber den ASCII-Zeichen?
+   Bei ASCII haben alle Zeichen gleich viele Bytes, bei UTF-8 ist die Anzahl der Bytes pro Zeichen unterschiedlich.
+2. € Zeichen in Verschieden Aplikationen.
+HTML: € €
+Windows: 20AC danach alt + x
+Word: 20AC danach alt + c
+Powerpoint:
+ 
+ 
