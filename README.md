@@ -148,3 +148,55 @@ Rechnungsprogramm: https://hexed.it/
 
 <img width="928" height="781" alt="image" src="https://github.com/user-attachments/assets/8c498541-7580-45b4-a3be-d95fc8c6ff81" />
 
+
+
+## Tag 2 29.08.2025
+
+
+## Einführung Codesysteme
+
+**Arten von Codes**
+
+Numerisch: Zahlen im Computer (z. B. Dualcode, Graycode)
+
+Alphanumerisch: Buchstaben/Zahlen (z. B. ASCII, Unicode)
+
+Strichcode: Produkte identifizieren (EAN)
+
+Leitungscode: Datenübertragung optimieren (Manchester, NRZ)
+
+Media-Codecs: Audio/Video codieren (MP3, MPEG)
+
+Geheimcode: Verschlüsselung
+
+ISBN: Buchnummer
+
+Genetisch: DNA → Aminosäuren
+
+Nicht zu verwechseln mit: Protokollen oder Datenformaten.
+
+**Eigenschaften von Codes**
+
+Effizient, fehlererkennend, sicher
+
+**Gleitkommazahlen (IEEE 754)**
+
+Zahlen mit „beweglichem“ Komma
+
+Bestehen aus: Vorzeichen, Exponent (Komma-Position), Mantisse (Zahlenwert)
+
+**Formate:**
+
+Single → 32 Bit, ~7 Dezimalstellen
+
+Double → 64 Bit, ~15 Dezimalstellen
+
+### Aufgabe 2
+
+1. https://zahlensysteme-rechner.de/ieee-754-konverter/
+2. https://www.h-schmidt.net/FloatConverter/IEEE754.html
+- Es ergibt genau 1
+- 1.9999999
+- Kann die dez. Zahl 0.1 genau gespeichert werden? (Bei "Decimal Representation" 0.1 eingeben) = Nein es geht nicht = 0.100000001490116119384765625
+- max. darstellbare Zahl≈3,4028235×10 hoch 38​
+- Und die kleinste pos. Zahl? (knapp ≠ 0) =  2.350989e-38
