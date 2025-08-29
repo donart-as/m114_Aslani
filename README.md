@@ -89,6 +89,9 @@ BYTE = 8 Bit, WORD = 16 Bit, DWORD = 32 Bit, QWORD = 64 Bit.
 
 **Overflow:** Bei vollem Speicher springt der Wert zurück (z. B. BYTE: 255+1=0).
 
+<img width="1415" height="367" alt="image" src="https://github.com/user-attachments/assets/65aaf267-174d-4d7a-a4c1-5337e1e49013" />
+
+
 ### Aufgabe 2
 
 1. 2 hoch 32 = 4’294’967’296
