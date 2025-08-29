@@ -143,3 +143,8 @@ Hex ↔ Binär: jede Hex-Ziffer = 4 Bit.
 
 
 ## Binäres Rechnen & Überlauf
+
+Rechnungsprogramm: https://hexed.it/
+
+<img width="928" height="781" alt="image" src="https://github.com/user-attachments/assets/8c498541-7580-45b4-a3be-d95fc8c6ff81" />
+
