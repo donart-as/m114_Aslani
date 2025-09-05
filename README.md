@@ -267,5 +267,20 @@ Sonderzeichen (UTF-8):
 
 <img width="1062" height="183" alt="image" src="https://github.com/user-attachments/assets/cfe358c7-8fdc-4ad4-b715-7a0eb6fc3a7f" />
 
+## Tag 3 05.09.2025
 
-
+- **Pixel:** besteht aus Rot, Grün, Blau (RGB).  
+- **Farben:** ca. 16,7 Mio. (bei 24 Bit).  
+- **Interlaced vs. Progressive:**  
+  - Interlaced = halbe Zeilen, flimmert.  
+  - Progressive = ganzes Bild, besser.  
+- **8K:** 7680×4320, bis 48 Gbit/s, 60–120 Hz.  
+- **Artefakte:** Bildfehler durch Kompression.  
+  - Beispiele: Blöcke, Streifen, Treppen, Rauschen.  
+- **PBM-Header:** enthält Format, Größe, Farbtiefe.  
+- **Bildgröße ändern:** Bild wird skaliert/verzerrt.  
+- **Farbtiefe erhöhen:** mehr Graustufen/Farben.  
+- **pgm_6.pgm:** kleines Graustufenbild.  
+- **pgm_7.pgm:** Auflösung im Header, „P“ ändern = Farbänderung.  
+- **Truck_vs_Flash_Flood_5:** Video beschädigt/Artefakte.  
+- **Auflösung ändern (Gimp/Pixlr):** Menü → Bildgröße/Druckgröße ändern.  
