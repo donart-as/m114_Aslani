@@ -206,9 +206,13 @@ Double → 64 Bit, ~15 Dezimalstellen
 1. Was stellen Sie fest bezüglich der Länge und Codierung der UTF-8 Zeichen gegenüber den ASCII-Zeichen?
    Bei ASCII haben alle Zeichen gleich viele Bytes, bei UTF-8 ist die Anzahl der Bytes pro Zeichen unterschiedlich.
 2. € Zeichen in Verschieden Aplikationen.
+
 HTML: € €
+
 Windows: 20AC danach alt + x
+
 Word: 20AC danach alt + c
+
 Powerpoint:
  
  
