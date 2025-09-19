@@ -315,3 +315,27 @@ Das Video stockt/ruckelt, weil die hohe Auflösung und Bitrate die Wiedergabe ve
 **Finden Sie heraus, wie man bei Gimp oder Pixlr die Auflösung und die Punktdichte ändert.**  
 Ja, ich hoffe es.
 
+## Tag 4 19.09.2025
+
+Kompression: Daten platzsparend darstellen, Redundanz entfernen.
+
+Verlustfrei: Originaldaten wiederherstellbar.
+
+Verlustbehaftet: Infos gehen verloren (Bilder, Audio, Video).
+
+Verfahren
+
+VLC (Variable Length Code): Unterschiedlich lange Codes → kurze für häufige Zeichen.
+
+Morsecode: erstes Beispiel, aber mehrdeutig.
+
+Huffman: präfixfrei, sehr effizient.
+
+- RLE (Run Length Encoding): Wiederholungen durch Anzahl + Symbol speichern. Gut bei vielen gleichen Symbolen.
+
+- LZW (Lempel-Ziv-Welch): Wörterbuchverfahren, Muster werden durch Referenzen ersetzt. Grundlage für ZIP, GIF, TIFF.
+
+- BWT (Burrows-Wheeler): Vorbereitung, sortiert Daten um, damit andere Verfahren besser komprimieren.
+
+[Präsentation_RLE (1).pptx](https://github.com/user-attachments/files/22420962/Prasentation_RLE.1.pptx)
+
