@@ -294,7 +294,7 @@ Blöcke, Streifen, Treppen, Rauschen.
 Enthält Format, Grösse, Farbtiefe.
 
 **Was passiert bei Bildgrössenänderung?**  
-Das Bild wird vergrößert, verkleinert oder verzerrt.
+Das Bild wird vergrössert, verkleinert oder verzerrt.
 
 **Was passiert bei Erhöhung der Farbtiefe?**  
 Mehr Farben bzw. Graustufen, bessere Qualität.
@@ -315,7 +315,9 @@ Das Video stockt/ruckelt, weil die hohe Auflösung und Bitrate die Wiedergabe ve
 **Finden Sie heraus, wie man bei Gimp oder Pixlr die Auflösung und die Punktdichte ändert.**  
 Ja, ich hoffe es.
 
-## Tag 4 19.09.2025
+## Tag 4 12.09.2025
+
+### Verlustfreihe Komprssion
 
 Kompression: Daten platzsparend darstellen, Redundanz entfernen.
 
@@ -338,4 +340,106 @@ Huffman: präfixfrei, sehr effizient.
 - BWT (Burrows-Wheeler): Vorbereitung, sortiert Daten um, damit andere Verfahren besser komprimieren.
 
 [Präsentation_RLE (1).pptx](https://github.com/user-attachments/files/22420962/Prasentation_RLE.1.pptx)
+
+## Tag 4 19.09.2025
+
+### Verlustbehaftete Datenkompression
+
+#### Aufgabe 1
+
+1. **Was versteht man unter verlustloser und verlustbehafteter Kompression? In was unterscheiden sich diese? Nennen Sie Einsatzgebiete.**
+Verlustlos: Originaldaten können exakt wiederhergestellt werden (z. B. ZIP, PNG, Text).
+
+Verlustbehaftet: Originaldaten können nicht exakt wiederhergestellt werden, gewisse Infos gehen verloren (z. B. JPG, MP3, MPEG).
+
+2. **Warum braucht es bei Multimedia (Audio/Video) verlustbehaftete Kompressionsverfahren?**
+Weil Audio- und Videodaten extrem gross sind. Nur durch Weglassen von nicht wahrnehmbaren Informationen können sie ausreichend verkleinert werden, um Speicherplatz und Bandbreite zu sparen.
+
+3. **Was ist der Kompromiss, denn man mit einer verlustbehafteten Komprimierung eingeht?**
+Man spart Speicherplatz, verliert aber Qualität. Ziel ist: Datenreduktion möglichst gross, Qualitätsverlust möglichst klein.
+
+4. **Mit welchen Verfahren erreichen Sie eine Reduktion der Bilddaten?**
+Farbunterabtastung (Subsampling, z. B. 4:2:2)
+
+Transformationen (z. B. DCT bei JPEG)
+
+Lauflängenkodierung (RLE)
+
+Huffman / VLC
+
+5. **Wie kann mit Subsampling die Bilddatenmenge reduziert werden?**
+Indem die Farbinformation (Chrominanz) mit geringerer Auflösung gespeichert wird, weil das menschliche Auge weniger empfindlich auf Farbdetails als auf Helligkeit reagiert.
+
+6. **Ist Unterabtastung ein verlustloses Komprimierungsverfahren?**
+Nein, es ist verlustbehaftet, weil Farbdetails unwiderruflich verloren gehen.
+
+7. **Warum sind die Datenverluste bei Subsampling vertretbar?**
+Weil das menschliche Auge Farbdetails nur schlecht unterscheiden kann, Helligkeitsinformationen aber viel wichtiger sind. Der Qualitätsverlust fällt also kaum auf.
+
+8. **Gibt es die Unterabtastung 2:2:2?**
+Nein, gebräuchlich sind Formate wie 4:4:4 (keine Unterabtastung), 4:2:2 oder 4:2:0.
+
+9. **Ein RGB-Bild mit einer HD720 Auflösung wird mit 4:2:2 unterabgetastet. Wie gross ist die komprimierte Datei?**
+RGB ohne Kompression: 3 Kanäle × 8 Bit × 1280 × 720 = 22,1 Mbit ≈ 2,76 MB
+Bei 4:2:2: Luminanz bleibt voll, Farbkanäle halbiert → nur 2/3 der Daten nötig.
+Ergebnis: ~1,84 MB
+
+#### Aufgabe 2
+
+# Aufgaben 2 – mit Lösungen
+
+1. **Welche Komprimierungsverfahren kommen bei JPG, WebP, BMP, TIF, GIF, HEIF und PNG zum Einsatz?**  
+   - **JPG** → verlustbehaftet, DCT (Discrete Cosine Transformation) + Quantisierung + Entropiecodierung  
+   - **WebP** → sowohl verlustbehaftet (DCT, Prädiktion, wie VP8) als auch verlustfrei möglich  
+   - **BMP** → meist unkomprimiert, kann einfache RLE nutzen  
+   - **TIF** → flexibel, kann unkomprimiert oder verlustlos (LZW, ZIP) oder verlustbehaftet (JPEG) sein  
+   - **GIF** → verlustlos, basiert auf LZW, max. 256 Farben (8 Bit)  
+   - **HEIF** → moderner Container, oft HEVC (H.265) als Bildkompression, verlustbehaftet oder verlustfrei  
+   - **PNG** → verlustlos, basiert auf Deflate (ZIP-ähnlich)  
+
+2. **Welche Verfahrensschritte werden bei der JPG-Komprimierung durchlaufen?**  
+   1. Farbraumumwandlung (RGB → YCbCr)  
+   2. Subsampling (meist 4:2:0 oder 4:2:2)  
+   3. Aufteilung in 8×8 Blöcke  
+   4. Diskrete Kosinustransformation (DCT) → Frequenzdarstellung  
+   5. Quantisierung (Rundung, Hauptverlust)  
+   6. Zickzack-Auslesen  
+   7. Lauflängencodierung (RLE)  
+   8. Entropiecodierung (z. B. Huffman, VLC)  
+
+
+3. **Welche Verfahrensschritte führen bei JPG/DCT schlussendlich zur Datenreduktion?**  
+   - **Quantisierung** (Verlust, viele Werte werden auf 0 gesetzt)  
+   - **Zickzack-Auslesen + RLE + Entropiecodierung** (verlustfrei, verkleinert Dateigrösse)  
+
+
+4. **Welche Nachteile kann das JPG-Komprimierungsverfahren haben?**  
+   - Blockartefakte (sichtbare 8×8-Klötze bei starker Kompression)  
+   - Verlust feiner Details und Kantenunschärfe  
+   - Farbverfälschungen bei zu starkem Subsampling  
+   - Für Texte, Logos und Grafiken ungeeignet → unscharf  
+
+
+5. **Komprimierung testen – typische Ergebnisse:**  
+
+   | Format                  | Speicher Dateigrösse | Farbtiefe | Kompressionsrate         | Artefakte                          |
+   |--------------------------|---------------------|-----------|--------------------------|------------------------------------|
+   | Ausgabegrösse Bildschirm | ?                   | ? Bit     | 0%                       | -                                  |
+   | Nikon-D750-Shotkit-6.tif | 148.2 MB            | 48 Bit    | unkomprimiert            | -                                  |
+   | Nikon-D750-Shotkit-6.RAW | 21.7 MB             | 48 Bit    | 85.1% (1:8), verlustfrei | -                                  |
+   | JPEG 100%                | ~12–15 MB           | 24 Bit    | ~90%                     | keine sichtbar                     |
+   | JPEG 80%                 | ~6–8 MB             | 24 Bit    | ~95%                     | leichte Artefakte an Gittern       |
+   | JPEG 50%                 | ~3–5 MB             | 24 Bit    | ~97%                     | deutliche Blockartefakte           |
+   | JPEG 30%                 | ~2–3 MB             | 24 Bit    | ~98%                     | starke Artefakte, unscharf         |
+   | JPEG 10%                 | ~1 MB               | 24 Bit    | ~99%                     | sehr starke Artefakte              |
+   | PNG ohne Verlust         | ~20–40 MB           | 48 Bit    | 60–80%                   | keine                              |
+   | PNG mit Verlust          | ~10–15 MB           | 24 Bit    | 90%                      | Farbverluste, weniger schlimm als JPEG |
+
+
+6. **Welche Erkenntnisse haben Sie gemacht?**  
+   - **TIFF & RAW** → extrem gross, dafür höchste Qualität (Archivierung, professionelle Bildbearbeitung).  
+   - **JPEG** → bei hoher Qualität kaum Unterschiede sichtbar, bei starker Kompression massive Artefakte.  
+   - **PNG** → verlustfrei, ideal für Transparenz und Grafiken, aber oft grössere Dateigrösse als JPEG.  
+   - **GIF** → ungeeignet für Fotos, nur für einfache Grafiken/Animationen.  
+   - **WebP/HEIF** → moderner, bessere Kompressionsraten als JPEG, oft bei gleicher Qualität deutlich kleinere Dateien.  
 
