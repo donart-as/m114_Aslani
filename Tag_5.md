@@ -27,7 +27,6 @@ Wissenschaft vom Entwurf, der Anwendung und Analyse kryptographischer Verfahren.
 - **Symmetrisch:** gleicher Schlüssel für Ver- und Entschlüsseln  
 - **Asymmetrisch:** Public/Private-Key-Paar (RSA, ECC)
 
----
 
 ## 2. Aufgaben & Lösungen
 
@@ -46,7 +45,6 @@ Wissenschaft vom Entwurf, der Anwendung und Analyse kryptographischer Verfahren.
 
 **Blockchiffren:** AES, DES, IDEA
 
----
 
 ### 2.2 ROT-/Cäsar-Chiffre
 
@@ -67,7 +65,6 @@ Wissenschaft vom Entwurf, der Anwendung und Analyse kryptographischer Verfahren.
 - Ermöglicht Analyse monoalphabetischer Substitutionen  
 - Störbar durch Polyalphabetische Verfahren oder kurze Texte
 
----
 
 ### 2.3 Vigenère-Verschlüsselung
 
@@ -86,7 +83,6 @@ Wissenschaft vom Entwurf, der Anwendung und Analyse kryptographischer Verfahren.
 
 **Hinweis:** Für lange Texte Kasiski-Analyse oder CrypTool1 nutzen.
 
----
 
 ### 2.4 XOR-Stromchiffre
 
@@ -105,7 +101,6 @@ Wissenschaft vom Entwurf, der Anwendung und Analyse kryptographischer Verfahren.
 - Klartext `IBM` + Chiffre `"[ql"` → Schlüssel 0x12 0x33 0x21  
 - Entschlüsseln `V{m` → `DHL`
 
----
 
 ### 2.5 Symmetrische Verschlüsselung – Vor-/Nachteile
 
@@ -128,7 +123,6 @@ Wissenschaft vom Entwurf, der Anwendung und Analyse kryptographischer Verfahren.
 | 200 | 19'900 |
 | 300 | 44'850 |
 
----
 
 ### 2.6 Hash-Werte
 
@@ -142,7 +136,6 @@ Wissenschaft vom Entwurf, der Anwendung und Analyse kryptographischer Verfahren.
 - **Kleinste Änderung → kompletter neuer Hash** (Avalanche-Effekt)  
 - Empfehlung: SHA-256 oder BLAKE2 statt MD5/SHA-1
 
----
 
 ### 2.7 Moderne symmetrische Verfahren
 
@@ -153,11 +146,6 @@ Wissenschaft vom Entwurf, der Anwendung und Analyse kryptographischer Verfahren.
 | DES (CBC) | Blockchiffre, 64-Bit Block, CBC-Modus | 56 Bit (+8 Parität) | Historisch, ersetzt durch 3DES |
 | AES | Blockchiffre, 128-Bit Block, 10-14 Runden | 128/192/256 Bit | Standard heute (TLS, VPN, Festplatten) |
 
----
 
-# Zusammenfassung / Tipps
-- Üben: ROT, Vigenère, XOR per Hand → dann CrypTool1  
-- Moderne Verschlüsselung: AES + sichere Schlüsselverwaltung  
-- Hash: SHA-256 oder BLAKE2 verwenden  
-- Für große Teilnehmerzahl: asymmetrische Verfahren / PKI einsetzen
+
 
