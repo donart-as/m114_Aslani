@@ -28,7 +28,7 @@ Wissenschaft vom Entwurf, der Anwendung und Analyse kryptographischer Verfahren.
 - **Asymmetrisch:** Public/Private-Key-Paar (RSA, ECC)
 
 
-## 2. Aufgaben & Lösungen
+## 2. Aufgaben
 
 ### 2.1 Abkürzungen
 
