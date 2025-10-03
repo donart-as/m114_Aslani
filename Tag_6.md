@@ -35,6 +35,7 @@
 
 ### Aufgabe 2
 <img width="588" height="676" alt="image" src="https://github.com/user-attachments/assets/a1c1fbdc-cd5e-4745-9727-c18f12a3c163" />
+b
 - Beispiel: p=11, q=29 → N=319, φ=280  
 - e=17, d=33, Klartext k=65 („A“)  
 - Verschlüsselung: `c = 65^17 mod 319 = 285`  
