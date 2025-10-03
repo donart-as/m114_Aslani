@@ -341,7 +341,7 @@ Huffman: präfixfrei, sehr effizient.
 
 [Präsentation_RLE (1).pptx](https://github.com/user-attachments/files/22420962/Prasentation_RLE.1.pptx)
 
-## Tag 4 19.09.2025
+## Tag 5 19.09.2025
 
 ### Verlustbehaftete Datenkompression
 
