@@ -1,4 +1,4 @@
-### Tag 6 26.09.2025
+### Tag 7 03.10.2025
 
 ## 1. Diffie-Hellman
 
@@ -35,7 +35,7 @@
 
 ### Aufgabe 2
 <img width="588" height="676" alt="image" src="https://github.com/user-attachments/assets/a1c1fbdc-cd5e-4745-9727-c18f12a3c163" />
-b
+
 - Beispiel: p=11, q=29 → N=319, φ=280  
 - e=17, d=33, Klartext k=65 („A“)  
 - Verschlüsselung: `c = 65^17 mod 319 = 285`  
@@ -56,12 +56,15 @@ b
 - Beispiele: TLS (HTTPS), PGP, S/MIME, IPsec  
 
 ### Aufgabe 3
-- Datei mit AES verschlüsseln, Session-Key mit RSA.  
-- Hex-Datei zeigt:  
-  - Teil = verschlüsselter Session-Key (RSA)  
-  - Rest = verschlüsselte Daten (AES)  
-- Session-Key Länge: z.B. 128 oder 256 Bit  
-- Echtheit prüfen: Zertifikat/Signatur  
+Die Datei enthält Informationen zur Verschlüsselung des Session-Keys und des Geheimtexts.
+
+Verwendet werden **RSA-1024** (asymmetrisch) und **AES** (symmetrisch).
+
+Der Session-Key ist **128 Bit** lang.
+
+Das Zertifikat **X.509v3-1996** stammt von **CrypTool (CN=CrypTool CA 2)**.
+
+Die Datei soll entschlüsselt werden.
 
 
 
