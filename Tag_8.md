@@ -43,16 +43,28 @@
 - Bestandteile: CA, RA, CRL, Verzeichnisdienste, Zeitstempel, Subscriber/Participant.  
 - **X.509-Zertifikate:** Standardisierte digitale Zertifikate, hierarchisch von CAs signiert.
 
-1. **Public-Key verifizieren:**  
-- Über Zertifikat einer vertrauenswürdigen CA prüfen (gültig, nicht gesperrt, korrekt signiert).  
 
-2. **Public-Key-Infrastruktur:**  
-- System zur sicheren Verwaltung und Prüfung von Public-Keys.  
+#### Aufgaben
 
-3. **Certification Authority (CA) / Trust-Center (TC):**  
-- CA: stellt Zertifikate aus und signiert sie.  
-- TC: überprüft Identität der Antragsteller vor Ausstellung.  
+**1. Wie kann ich den Public-Key verifizieren?**  
+- Über das digitale Zertifikat einer vertrauenswürdigen CA.  
+- Prüfen, ob das Zertifikat gültig, nicht gesperrt (CRL) und korrekt signiert ist.  
+- Schlüssel-Fingerabdrücke mit offiziellen Quellen vergleichen.
 
-4. **CrypTool-Zertifikat:**  
-- Enthält z. B. CN (Name), Issuer, Gültigkeit, Public-Key-Infos.  
-- Root-CA: oberste, selbstsignierte Zertifizierungsstelle, Basis des Vertrauens.
+**2. Was versteht man unter Public-Key-Infrastruktur?**  
+- System zur sicheren Ausstellung, Verteilung und Prüfung von Public-Keys mittels Zertifikaten.  
+- Stellt sicher, dass ein Public-Key wirklich der angegebenen Person oder Organisation gehört.
+
+**3. Was bedeutet Certification-Authority (CA) und was Trust-Center (TC)?**  
+- **CA:** Stellt Zertifikate aus und signiert diese digital.  
+- **TC:** Prüft die Identität des Antragstellers und überwacht die ordnungsgemäße Ausstellung der Zertifikate.
+
+**4. Untersuchen Sie die Zertifizierung des CrypTool 1. Lassen Sie sich das Zertifikat ihres RSA-Schlüsselpaares von einem KI-Bot erklären, auch die Abkürzungen.**  
+- Das Zertifikat enthält u.a. CN (Common Name), Issuer (Herausgeber), Gültigkeitszeitraum, Public-Key-Infos.  
+- KI-Bot oder CrypTool kann die Abkürzungen erklären, z. B. CN = Name der CA oder des Zertifikatsinhabers.
+
+**5. Was ist ein Root-CA?**  
+- Oberste, selbstsignierte Zertifizierungsstelle in einer PKI.  
+- Vertrauensbasis für alle darunterliegenden Zertifikate (Sub-CAs oder Teilnehmer).  
+
+
