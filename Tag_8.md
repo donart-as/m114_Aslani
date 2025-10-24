@@ -22,3 +22,12 @@
 | Entschlüsseln | Privater Schlüssel (Empfänger) | Macht Inhalt lesbar |
 
 
+#### Aufgabe 2
+
+<img width="745" height="292" alt="image" src="https://github.com/user-attachments/assets/598f0941-5386-4a58-a1e5-ee04bfb8f838" />
+
+<img width="800" height="495" alt="image" src="https://github.com/user-attachments/assets/cc47301e-b3b7-46a6-b4f1-9e36ad3d6410" />
+
+
+
+
