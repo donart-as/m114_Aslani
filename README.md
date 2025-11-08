@@ -7,31 +7,7 @@
 
 
 
-## Tag 4 12.09.2025
 
-### Verlustfreihe Komprssion
-
-Kompression: Daten platzsparend darstellen, Redundanz entfernen.
-
-Verlustfrei: Originaldaten wiederherstellbar.
-
-Verlustbehaftet: Infos gehen verloren (Bilder, Audio, Video).
-
-Verfahren
-
-VLC (Variable Length Code): Unterschiedlich lange Codes → kurze für häufige Zeichen.
-
-Morsecode: erstes Beispiel, aber mehrdeutig.
-
-Huffman: präfixfrei, sehr effizient.
-
-- RLE (Run Length Encoding): Wiederholungen durch Anzahl + Symbol speichern. Gut bei vielen gleichen Symbolen.
-
-- LZW (Lempel-Ziv-Welch): Wörterbuchverfahren, Muster werden durch Referenzen ersetzt. Grundlage für ZIP, GIF, TIFF.
-
-- BWT (Burrows-Wheeler): Vorbereitung, sortiert Daten um, damit andere Verfahren besser komprimieren.
-
-[Präsentation_RLE (1).pptx](https://github.com/user-attachments/files/22420962/Prasentation_RLE.1.pptx)
 
 ## Tag 5 19.09.2025
 
